@@ -1,0 +1,62 @@
+### 1. Write a Python program to convert kilometers to miles?
+##### Sol.
+
+km = 5
+miles = km / 1.609344
+print("km = {} equivalent distance in miles = {}".format(km, miles))
+
+### 2.Write a Python program to convert Celsius to Fahrenheit?
+##### Sol.
+
+c = 37
+f = c*9/5 + 32
+print("Celsius = {} equivalent temperature in Fahrenheit = {} ".format(c,f))
+
+### 3. Write a Python program to display calendar?
+##### Sol.
+
+import calendar
+year = 2000
+month = 11
+date = 7
+print(calendar.month(year,month,date))
+
+year = 2024
+print(calendar.calendar(year))
+
+### 4. Write a Python program to solve quadratic equation?
+##### Sol.
+
+import math
+import cmath
+
+print("ax^2 + bx^1 + c = 0")
+print("Entre the coeff a,b and constant c")
+a = int(input("Enter the  value of coeff a = "))
+b = int(input("Enter the value of coeff b = "))
+c = int(input("Enter the value of constant c = "))
+
+d = (b**2)-(4*a*c)
+if d >= 0:
+   root1 = ((-1*b)+(math.sqrt(d))) / (2*a)
+   root2 = ((-1*b)-(math.sqrt(d))) / (2*a)
+else:
+    root1 = ((-1 * b) + (cmath.sqrt(d))) / (2 * a)
+    root2 = ((-1 * b) - (cmath.sqrt(d))) / (2 * a)
+
+print('\n for quad eq.= {}x^2 + ({})x^1 + {}'.format(a,b,c))
+print('the solution are = {} and {} '.format(root1,root2))
+
+### 5. Write a Python program to swap two variables without temp variable?
+##### Sol.
+
+var1 = 10
+var2 = 20
+
+print("\nbefore swap:\nvar1 = {} and var2 = {}".format(var1,var2))
+var2 = var1 + var2
+var1 = var2 - var1
+var2 = var2 - var1
+
+print('\nafter swap:\nvar1 ={} and var2 = {}'.format(var1,var2))
+
